@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+:root {
+  --Orange: #fb7413;
+  --White: #ffffff;
+  --LightGrey: #959eac;
+  --MediumGrey: #7c8798;
+  --DarkBlue: #252d37;
+  --VeryDarkBlue: #121417;
+}
+body {
+  background-color: var(--VeryDarkBlue);
+  color: var(--White);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 385px;
+  height: 415px;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  border-radius: 25px;
+  justify-content: space-around;
+}
+.container .circle {
+  background-color: #232a34;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+.logo img {
+  margin: auto;
+}
+.container .text h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.container .text p {
+  font-weight: 400;
+  color: var(--LightGrey);
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+.container .rating ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+}
+.rating ul .circle:hover {
+  background-color: var(--LightGrey);
+}
+.rating ul .circle:active {
+  background-color: var(--Orange);
+}
+.rating ul .circle:hover a {
+  color: var(--White);
+}
+.rating ul li {
+  align-items: center;
+  cursor: pointer;
+}
+.rating ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--LightGrey);
+  font-size: 15px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+}
+.btn button {
+  margin: auto;
+  width: 95%;
+  height: 2.5rem;
+  background-color: var(--Orange);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn button a {
+  text-decoration: none;
+  color: var(--White);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
